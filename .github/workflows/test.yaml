@@ -9,7 +9,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Upload test.txt
-      uses: csala/google-drive-upload-action@v1
+      uses: csala/google-drive-upload-action@add-overwrite-option
       with:
         credentials: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS_BASE64 }}
         target: test.txt
